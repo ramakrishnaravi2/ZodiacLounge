@@ -1,0 +1,424 @@
+/*--------------------
+   1. BASE CSS
+----------------------*/
+
+
+@font-face {
+    font-family:"opensans";
+    src: url('../fonts/OpenSans-Regular.ttf');
+}
+body{
+	font-family:"opensans";
+}
+h3{
+ font-size: 30px;
+}
+h2{
+ font-size: 35px;
+}
+.float-right{
+	float:right;
+}
+.logo-color{
+    color: #d1045a;
+    font-size: 28px !important;
+    /* text-decoration: underline; */
+    border-bottom: 2px solid;
+    padding: 0 0 10px;
+    margin: 0 0 25px;
+}
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+a {
+   /* -webkit-transition: 0.3s;
+    transition: 0.3s;*/
+    color: #212324;
+}
+
+a:hover {
+    color: #c1934c;
+}
+
+a:focus,
+a:hover {
+    outline: 0 solid;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/**************************for IE browser max-width compatibility**********/
+.img-responsive{
+	width: 100%;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+
+html,
+body {
+    height: 100%
+}
+
+
+a:hover {
+    text-decoration: none
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+
+.nav-logo{
+	height:auto;
+}
+.nav-logo img{
+	max-height:50px;
+}
+.headerbar .nav>li>a{
+	color:#fff;
+    padding: 25px 15px;
+    font-size: 18px;
+}
+.headerbar .nav>li>a:focus, .headerbar .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #04d1a3;
+}
+/******adding background color for scrolling navbar*******************/
+.headerbar.scrolled{
+  background:rgba(22, 26, 59, 0.9);
+}
+.navbar-toggle{
+	background: black;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px solid #fff;
+    color: #fff;
+    background: white;
+}
+.top-social{
+    float: right;
+    padding: 28px 0 24px 15px;
+}
+.top-social li span{
+	color:#fff;
+	font-size:18px !important;
+}
+
+.main-banner-section{
+	background:url(../images/slide.jpg) no-repeat;
+	background-size:cover;
+	padding:100px 0 100px 0;
+	min-height:600px;
+}
+.main-banner-section:before{
+	content:"";
+	position:absolute;
+	top:0;
+	background:#000;
+	opacity:0.45;
+}
+.banner-content-div{
+	padding:15% 0;
+	color:#fff;
+}
+.booknow-btn{
+background:#d10459;
+padding:10px 15px;
+color:#fff;
+border-radius:5px;
+ margin: 15px 0;
+ display: inline-block;
+}
+
+.features-section{
+background:url(../images/loft-bg.jpg) no-repeat;
+background-size:cover;
+color:#fff;
+padding:40px 0;
+}
+.icon-box{
+  padding: 30px 0;
+}
+.icon-box img{
+    display: block;
+    margin: 0 auto;
+}
+.icon-box span{
+  display: block;
+    font-size: 20px;
+    padding: 10px 0;
+	color: #fff;
+}
+.gallery-section{
+	position:relative !important;
+	color:#fff;
+	background:url(../images/gallerybg.jpg) no-repeat;
+	background-size:cover;
+	padding:60px 0;
+}
+
+
+.img-box{
+	display:inline-block;
+}
+
+.menu-section{
+	padding:60px 0;
+	color:#fff;
+	background:url(../images/menubg.jpg) no-repeat;
+	background-size:cover;
+}
+.menu-section .menu-tabs{
+	border: none;
+    text-align: center;
+}
+
+
+.menu-section .nav-tabs>li {
+    /* float: left; */
+    margin-bottom: -1px;
+    display: inline-block;
+    border: none;
+    /* display: inline; */
+    float: none;
+
+
+}
+.menu-section .menu-tabs li a{
+	color:#fff;
+	text-align:center;
+	font-size: 25px;
+		/*  -webkit-transition: all 10s;
+
+     -moz-transition: all 10s;
+
+     -o-transition: all 10s;
+
+      transition: all 10s;*/
+	
+}
+.menu-section .nav-tabs>li.active>a, .menu-section .nav-tabs>li.active>a:focus, .menu-section .nav-tabs>li.active>a:hover{
+	    background-color: transparent;
+     border: none;
+	 color:#04d1a3;
+	 
+}
+.menu-section .nav>li>a:focus, .menu-section .nav>li>a:hover{
+	background:none;
+	border:none;
+}
+.menu-section .tab-content>.tab-pane{
+    background: #171a3b;
+    padding: 25px 20px;
+
+}
+.menu-section .tab-content p{
+  margin: 0 0 20px;
+}
+.menu-section .tab-content h2{
+	font-size:20px;
+}
+.menu-section .tab-content h3{
+	font-size:18px;
+}
+.item-name{
+	display:inline;
+}
+.item-price{
+	
+	color: #ff0909;
+    font-size: 20px;
+}
+.flavours-size h3{
+	font-size:16px;
+	font-weight: normal;
+}
+.menu-item h4{
+    display: inline-block;
+    color: #04d1a3;
+    font-size: 20px;
+    margin: 0 0 5px;
+}
+.menu-item span{
+ color:#ff0909;
+ font-size: 20px;
+}
+.menu-item{
+	margin:6px 0;
+}
+.reservation{
+	background-color:#171a3b;
+	color:#fff;
+	padding:60px 0;
+}
+.reservation-form .form-group{
+    margin: 12px 10px;
+}
+.reservation-form input.form-control{
+	position:relative;
+}
+.reservation-form input.form-control{
+	background: transparent;
+    border: 1px solid #49fdff;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+	color:#fff;
+	padding: 5px 15px 5px 35px;
+	margin: 8px 0;
+}
+.reservation-form .input-group{
+	position: relative;
+    display: table;
+    width: 100%;
+}
+.reservation-form .input-group .input-group-addon{
+	background: transparent;
+    border: none;
+    position: absolute;
+	
+}
+.reservation-form .input-group .input-group-addon i{
+   color:#d1045a;
+   padding: 10px 0;
+}
+/*.reservation-form input[type="text"]:before{
+   font-family: "FontAwesome";
+   content: "\f095";
+   position: absolute;
+   top:5px;
+   left:10px;
+   font-weight: 900;
+   font-size:30px;
+   color:#fff;
+}*/
+.reservation-form input.form-control:focus {
+	box-shadow:none;
+}
+
+
+/******************************************Styling Radio Buttons*********************************/
+.label-group {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.label-group input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 21px;
+    width: 21px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.label-group:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.label-group input:checked ~ .checkmark {
+    background-color: #d10459;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.label-group input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.label-group .checkmark:after {
+    top: 7px;
+    left: 6px;
+    width: 7px;
+    height: 7px;
+	border-radius: 50%;
+	background: white;
+}
+.reservation-form{
+	border:5px solid #d10459;
+	padding: 20px 15px;
+}
+.footer-section{
+    background: #001436;
+    padding: 40px 0 0;
+    color: #fff;
+    text-align: center;
+}
+
+.social li span{
+	font-size:20px;
+	color:#fff;
+}
+.logo-center{
+	text-align:center;
+	margin:0 auto;
+}
+
+/********************************animation for banner background*********************/

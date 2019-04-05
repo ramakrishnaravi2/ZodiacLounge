@@ -1,0 +1,24 @@
+
+@media (max-width:768px) {
+	.headerbar .nav>li>a{
+		background:#000;
+	}
+	.headerbar .nav>li>a:focus, .headerbar .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #d10459;
+}
+.float-right{
+	float:none !important;
+}
+.img-box {
+     display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+.img-box img{
+   margin: 0 auto;
+}
+
+
+
+	}
